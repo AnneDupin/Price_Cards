@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    background: #F8F7F9;
+}
+
+#flexContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*horizontalement*/
+}
+
+.threeCards {
+    width: 300px;
+    height: 520px;
+    margin: 30px;
+    position: relative;
+    transition: 0.2s ease-in;
+    box-shadow: 0px 10px 30px black;
+}
+
+.threeCards:hover {
+    transform: scale(1.1);
+    /* faire effet loupe */
+}
+
+.header {
+    height: 200px;
+    width: 300px;
+    position: relative;
+    background: #ade8f4;
+}
+
+.header h2 {
+    margin: 0;
+    position: relative;
+    top: 130px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+} 
+
+#spanPrix {
+    font-size: 4Opx;
+    font-family: 'Lato', sans-serif;
+}
+
+.price {
+    height: 120px;
+    width: 300px;
+    background: #caf0f8;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    position: absolute;
+    top: 0;
+}
+
+.price h1 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+    font-size: 30px;
+    position: relative;
+    top: 30px; 
+}
+
+.details {
+    background: whitesmoke;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-family: 'Lato', sans-serif;
+    transition: all 0.2s ease-in;
+}
+
+.details:hover {
+    background: rgba(181, 208, 230,0.1);
+}
+
+#btn {
+    background: white;
+    height: 80px;
+}
+
+#btn a { 
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    height: 50px;
+    width: 120px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    top: 15px;
+    border-radius: 30px;
+    border: 1px solid #22A7F0;
+    transition: all 0.2s ease-in;
+}
+
+#btn a:hover {
+    background: rgba(34, 167, 240, 0.8);
+    color: white;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+   
+    #flexContainer {
+        width: 100%;
+        height: 2000px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /*horizontalement*/
+    }
+     
+
+}
+
+
+
+
+/* Astuce */
+/* Pour centrer texte verticalement > même hauteur
+de ligne que la hauteur du bouton */
